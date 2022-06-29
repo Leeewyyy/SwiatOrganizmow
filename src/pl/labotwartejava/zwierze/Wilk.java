@@ -20,7 +20,6 @@ public class Wilk extends Zwierze{
 
     @Override
     public char rysowanie() {
-        super.rysowanie();
         return 'W';
     }
 }

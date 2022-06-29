@@ -20,7 +20,6 @@ public class Owca extends Zwierze {
 
     @Override
     public char rysowanie() {
-        super.rysowanie();
         return 'O';
     }
 }

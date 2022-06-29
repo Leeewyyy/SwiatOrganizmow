@@ -21,7 +21,6 @@ public class Jez extends Zwierze{
 
     @Override
     public char rysowanie() {
-        super.rysowanie();
         return 'J';
     }
 }

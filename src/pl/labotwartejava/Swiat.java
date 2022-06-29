@@ -13,7 +13,7 @@ public class Swiat {
 
     private GUI apka;
     private final char[][] plansza = new char[20][20];
-    private final HashMap<Organizm, Integer> inicjatywy = new HashMap<Organizm, Integer>();
+    private final HashMap<Organizm, Integer> inicjatywy = new HashMap<>();
     private final List<Organizm> doZabicia = new ArrayList<>();
     public Organizm[][] organizmy = new Organizm[20][20];
 
@@ -30,12 +30,12 @@ public class Swiat {
     void wykonajTure(GUI apka) {
         this.apka = apka;
         doZabicia.clear();
-        List<Integer> listainicjatyw = new ArrayList<>(inicjatywy.values());
-        listainicjatyw.sort(Collections.reverseOrder());
+        List<Integer> listaInicjatyw = new ArrayList<>(inicjatywy.values());
+        listaInicjatyw.sort(Collections.reverseOrder());
 
-        int poprz = 0;
-        for (Integer i : listainicjatyw) {
-            if (i == poprz) continue;
+        Integer poprz = 0;
+        for (Integer i : listaInicjatyw) {
+            if (i.equals(poprz)) continue;
             else poprz = i;
             for (Organizm o : inicjatywy.keySet()) {
                 if (o.getInicjatywa() == i) {
@@ -92,7 +92,7 @@ public class Swiat {
             BufferedReader reader = new BufferedReader(new FileReader("gra.txt"));
             String line;
             int sila, inicjatywa, x, y, blokada;
-            boolean niewlasciwyPlik=false;
+            boolean niewlasciwyPlik = false;
 
             for (int i = 0; i < 20; i++) {
                 for (int j = 0; j < 20; j++) {

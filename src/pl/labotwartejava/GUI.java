@@ -9,7 +9,7 @@ public class GUI extends JFrame {
 
     public GUI() {
         this.setSize(1920, 1080);
-        this.setTitle("Adam Lewandowski 180355");
+        this.setTitle("Adam Lewandowski");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }

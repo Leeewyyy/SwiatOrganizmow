@@ -41,7 +41,6 @@ public class Lis extends Zwierze {
 
     @Override
     public char rysowanie() {
-        super.rysowanie();
         return 'L';
     }
 }

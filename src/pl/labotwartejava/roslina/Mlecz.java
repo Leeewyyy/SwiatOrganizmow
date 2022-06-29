@@ -10,17 +10,14 @@ public class Mlecz extends Roslina {
 
     @Override
     public void akcja() {
-        super.akcja();
     }
 
     @Override
     public void kolizja(Organizm organizm, boolean czyatakuje) {
-        super.kolizja(organizm, czyatakuje);
     }
 
     @Override
     public char rysowanie() {
-        super.rysowanie();
         return 'M';
     }
 }
